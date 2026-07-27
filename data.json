@@ -2,7 +2,7 @@
     {
         "id": "design1",
         "title": "ডিজাইন ১",
-        "image": "images/Portfolio-1.jpg.jpg",
+        "image": "images/Portfolio-1.jpg"
         "description": "এখানে ডিজাইনের বিস্তারিত লিখুন।",
         "averageRating": "4.5"
     },
