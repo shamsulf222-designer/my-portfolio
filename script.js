@@ -6,6 +6,7 @@ fetch('data.json')
     .then(response => response.json())
     .then(data => {
         const gallery = document.getElementById('gallery');
+        
         data.forEach((item, index) => {
             const card = document.createElement('div');
             card.className = 'glass-card';
@@ -34,21 +35,22 @@ fetch('data.json')
                     </div>
 
                     <div class="comments-section">
-                        <!-- Giscus কমেন্ট সিস্টেম এখানে লোড হবে -->
-                        <div class="giscus" data-repo="YOUR_GITHUB_USERNAME/YOUR_REPO_NAME" 
-                             data-repo-id="YOUR_REPO_ID" 
-                             data-category="Announcements" 
-                             data-category-id="YOUR_CATEGORY_ID" 
-                             data-mapping="specific" 
-                             data-term="${item.id}" 
-                             data-strict="0" 
-                             data-reactions-enabled="1" 
-                             data-emit-metadata="0" 
-                             data-input-position="top" 
-                             data-theme="dark_dimmed" 
-                             data-lang="bn" 
-                             data-loading="lazy" 
-                             crossorigin="anonymous">
+                        <!-- Giscus কমেন্ট সিস্টেম -->
+                        <div class="giscus" 
+                            data-repo="shamsulf222-designer/my-portfolio" 
+                            data-repo-id="R_kgDOTkkSHQ" 
+                            data-category="General" 
+                            data-category-id="DIC_kwDOTkkSHc4DCDGW" 
+                            data-mapping="specific" 
+                            data-term="${item.id}" 
+                            data-strict="0" 
+                            data-reactions-enabled="1" 
+                            data-emit-metadata="0" 
+                            data-input-position="bottom" 
+                            data-theme="preferred_color_scheme" 
+                            data-lang="en" 
+                            data-loading="lazy" 
+                            crossorigin="anonymous">
                         </div>
                     </div>
                 </div>
@@ -60,8 +62,7 @@ fetch('data.json')
             stars.forEach(star => {
                 star.addEventListener('click', function() {
                     const rating = this.getAttribute('data-value');
-                    // এখানে লোকাল স্টোরেজে সেভ করা হচ্ছে (ডেমো হিসেবে)
-                    // বাস্তবে গ্লোবাল রেটিং সেভ করতে হলে একটি ব্যাকএন্ড (যেমন: Firebase) লাগবে
+                    // লোকাল স্টোরেজে সেভ করা হচ্ছে (ডেমো হিসেবে)
                     localStorage.setItem(`rating-${item.id}`, rating);
                     updateStars(item.id, rating);
                     alert(`আপনি ${rating} স্টার রেটিং দিয়েছেন!`);
@@ -75,10 +76,12 @@ fetch('data.json')
             }
         });
 
-        // Giscus স্ক্রিপ্ট লোড
+        // Giscus স্ক্রিপ্ট লোড করার ফাংশন কল করা হচ্ছে
         loadGiscus();
-    });
+    })
+    .catch(error => console.error('Error loading data:', error));
 
+// স্টার আপডেট করার ফাংশন
 function updateStars(id, rating) {
     const stars = document.querySelectorAll(`#stars-${id} .star`);
     stars.forEach(star => {
@@ -89,6 +92,7 @@ function updateStars(id, rating) {
     });
 }
 
+// Giscus স্ক্রিপ্ট ডাইনামিকভাবে লোড করার ফাংশন
 function loadGiscus() {
     const script = document.createElement('script');
     script.src = 'https://giscus.app/client.js';
