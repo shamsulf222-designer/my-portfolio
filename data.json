@@ -2,14 +2,14 @@
     {
         "id": "design1",
         "title": "ডিজাইন ১",
-        "image": "images/portfolio-1.jpg",
+        "image": "images/portfolio-1.jpg.jpg",
         "description": "এখানে ডিজাইনের বিস্তারিত লিখুন।",
         "averageRating": "4.5"
     },
     {
         "id": "design2",
         "title": "ডিজাইন ২",
-        "image": "images/portfolio-2.jpg",
+        "image": "images/portfolio-2.jpg.jpg",
         "description": "এখানে ডিজাইনের বিস্তারিত লিখুন।",
         "averageRating": "4.8"
     },
