@@ -1,16 +1,58 @@
 [
     {
         "id": "design1",
-        "title": "মডার্ন লোগো ডিজাইন",
-        "image": "Portfolio-1.jpg.jpg",
-        "description": "একটি ক্লায়েন্টের জন্য তৈরি করা মিনিমাল এবং মডার্ন লোগো ডিজাইন।",
+        "title": "ডিজাইন ১",
+        "image": "images/portfolio-1.jpg",
+        "description": "এখানে ডিজাইনের বিস্তারিত লিখুন।",
         "averageRating": "4.5"
     },
     {
         "id": "design2",
-        "title": "সোশ্যাল মিডিয়া পোস্টার",
-        "image": "images/Portfolio-2.jpg.jpg",
-        "description": "ফেসবুক এবং ইনস্টাগ্রামের জন্য গ্লাসমরফিজম স্টাইলের পোস্টার।",
+        "title": "ডিজাইন ২",
+        "image": "images/portfolio-2.jpg",
+        "description": "এখানে ডিজাইনের বিস্তারিত লিখুন।",
         "averageRating": "4.8"
+    },
+    {
+        "id": "design3",
+        "title": "ডিজাইন ৩",
+        "image": "images/portfolio-3.jpg",
+        "description": "এখানে ডিজাইনের বিস্তারিত লিখুন।",
+        "averageRating": "4.2"
+    },
+    {
+        "id": "design4",
+        "title": "ডিজাইন ৪",
+        "image": "images/portfolio-4.jpg",
+        "description": "এখানে ডিজাইনের বিস্তারিত লিখুন।",
+        "averageRating": "5.0"
+    },
+    {
+        "id": "design5",
+        "title": "ডিজাইন ৫",
+        "image": "images/portfolio-5.jpg",
+        "description": "এখানে ডিজাইনের বিস্তারিত লিখুন।",
+        "averageRating": "4.7"
+    },
+    {
+        "id": "design6",
+        "title": "ডিজাইন ৬",
+        "image": "images/portfolio-6.jpg",
+        "description": "এখানে ডিজাইনের বিস্তারিত লিখুন।",
+        "averageRating": "4.9"
+    },
+    {
+        "id": "design7",
+        "title": "ডিজাইন ৭",
+        "image": "images/portfolio-7.jpg",
+        "description": "এখানে ডিজাইনের বিস্তারিত লিখুন।",
+        "averageRating": "4.6"
+    },
+    {
+        "id": "design8",
+        "title": "ডিজাইন ৮",
+        "image": "images/portfolio-8.jpg",
+        "description": "এখানে ডিজাইনের বিস্তারিত লিখুন।",
+        "averageRating": "4.3"
     }
 ]
